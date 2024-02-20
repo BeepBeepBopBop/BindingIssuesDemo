@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:DataType="local:MainPageViewModel"
+             xmlns:local="clr-namespace:DemoApp"
+             x:Class="DemoApp.MainPage">
+
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="16">
+        <local:ProgressBar HeightRequest="5" HorizontalOptions="Fill" Margin="16, 0" ProgressBrush="Red" Progress="{Binding SessionProgression.ProgressionRatio}"/>
+        <Button Text="Increase time" Clicked="Button_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
